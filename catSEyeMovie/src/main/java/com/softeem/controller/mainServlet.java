@@ -17,7 +17,8 @@ public class mainServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
        request.setCharacterEncoding("utf-8");
-       request.getRequestDispatcher("view/test.jsp").forward(request, response);
+       // request.getRequestDispatcher("view/test.jsp").forward(request, response);
+       request.getRequestDispatcher("view/main.jsp").forward(request, response);
         // 后台要给前端一个响应
         System.out.println("响应了");
     }
